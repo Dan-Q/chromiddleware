@@ -1,0 +1,30 @@
+[
+  {
+    "title": "JSOxford 2018 Hacks",
+    "url": "http://renderhack.jsoxford.com/hacks",
+    "outputs": [
+      { "template": "rss.xml", "output": "renderhack.xml" },
+      { "template": "rss.json", "output": "renderhack.json" }
+    ],
+    "selector": "document.querySelectorAll('h3')",
+    "item": {
+      "title": "item.innerText",
+      "description": "item.nextElementSibling.innerHTML"
+    }
+  },
+
+  {
+    "title": "Forward Comic",
+    "url": "http://forwardcomic.com/list.php",
+    "outputs": [
+      { "template": "rss.xml", "output": "forward.xml" }
+    ],
+    "selector": "document.querySelectorAll('.class1 a')",
+    "item": {
+      "title": "item.innerText",
+      "link": "item.href",
+      "guid": "item.href",
+      "description": "item.nextElementSibling.nodeValue"
+    }
+  }
+]

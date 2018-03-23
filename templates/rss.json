@@ -1,0 +1,11 @@
+{
+  "title": "{{site.title}}",
+  "description": "{{site.description}}",
+  "link": "{{site.url}}",
+  "items": [
+    {{#items}}
+      "title": "{{title}}",
+      "description": "{{description}}"
+    {{/items}}
+  ]
+}
